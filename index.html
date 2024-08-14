@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icone.ico" type="image/x-icon">
+    <title>The Coolest Quizzz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+
+        <div id="topoTitulo">
+            <img id="imgTopo" src="header.png">
+        </div>
+
+        <div id="meioPerguntas">
+            <div id="gapEsquerda"></div>
+
+            <div class="cardsPerguntas">
+                <span class="spnLabel"><label class="lblTituloPergunta">Pergunta 1</label></span>
+                <label class="lblTextoPergunta">Qual foi a primeira princesa da Disney?</label>
+            </div>
+
+            <div id="gapMeioUm"></div>
+
+            <div class="cardsPerguntas">
+                <span class="spnLabel"><label class="lblTituloPergunta">Pergunta 2</label></span>
+                <label class="lblTextoPergunta">Qual é a princesa mais velha?</label>
+            </div>
+
+            <div id="gapMeioDois"></div>
+
+            <div class="cardsPerguntas">
+                <span class="spnLabel"><label class="lblTituloPergunta">Pergunta 3</label></span>
+                <label class="lblTextoPergunta">Qual a unica princesa que trabalha?</label>
+            </div>
+
+            <div id="gapDireita"></div>
+
+        </div>
+
+        <div id="meioLabels">
+
+            <label>Escolha sua resposta</label>
+            <label>Escolha sua resposta</label>
+            <label>Escolha sua resposta</label>
+
+        </div>
+        <div id="meioSelects">
+            <select id="selectPerguntaUm" class="selectsRespostas">
+                <option value="2">Resposta</option>
+                <option value="0">Cinderela</option>
+                <option value="0">Branca de Neve</option>
+                <option value="1">Aurora</option>
+            </select>
+            <select id="selectPerguntaDois" class="selectsRespostas">
+
+                <option value="2">Resposta</option>
+                <option value="0">Tiana</option>
+                <option value="0">Elsa</option>
+                <option value="1">Bela</option>
+            </select>
+            <select id="selectPerguntaTres" class="selectsRespostas">
+
+                <option value="2">Resposta</option>
+                <option value="0">Basquete</option>
+                <option value="1">Xadrez</option>
+                <option value="0">Vôlei</option>
+            </select>
+        </div>
+        <div id="baixoResultado">
+
+            <img src="quadrados.png" class="iconesBaixo" width="10%" height="10%">
+            <label id="lblPontos">Sua Pontuação</label>
+            <input id="inptPontos" readonly>
+            <button id="btnFinaliza" onclick="FinalizaQuiz()">Finalizar Quiz</button>
+            <img src="quadrado2.png" class="iconesBaixo" width="10%" height="10%">
+
+        </div>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+</html>
